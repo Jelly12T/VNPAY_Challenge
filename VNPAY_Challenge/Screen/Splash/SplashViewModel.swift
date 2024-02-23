@@ -6,19 +6,39 @@
 //
 
 import UIKit
+import RxSwift
 
-struct SplashViewModelInput {
+private struct Const {
+    static let timeDelay = 2
+}
+
+struct SplashViewModelInput: InputOutputViewModel {
 
 }
 
-struct SplashViewModelOutput {
-
+struct SplashViewModelOutput: InputOutputViewModel {
+    var updateBackgroundColor = PublishSubject<Void>()
 }
 
-struct SplashViewModelRouting {
-
+struct SplashViewModelRouting: RoutingOutput {
+    var stopSplash = PublishSubject<Void>()
 }
 
-final class SplashViewModel {
+final class SplashViewModel: BaseViewModel<SplashViewModelInput, SplashViewModelOutput, SplashViewModelRouting> {
+
+    override init() {
+        super.init()
+
+        self.finishSplashScreenAfterAFewSeconds()
+    }
+
+    private func finishSplashScreenAfterAFewSeconds() {
+        Observable.just(())
+            .delay(.seconds(Const.timeDelay), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [unowned self] in
+                self.routing.stopSplash.onNext(())
+            })
+            .disposed(by: self.disposeBag)
+    }
 
 }

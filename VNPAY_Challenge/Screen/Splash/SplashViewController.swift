@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class SplashViewController: UIViewController {
     var viewModel: SplashViewModel
@@ -43,6 +44,10 @@ class SplashViewController: UIViewController {
     }
 
     func configRoutingOutput() {
-
+        self.viewModel.routing.stopSplash
+            .subscribe(onNext: { [unowned self] in
+                self.coordinator?.stop()
+            })
+            .disposed(by: self.disposeBag)
     }
 }

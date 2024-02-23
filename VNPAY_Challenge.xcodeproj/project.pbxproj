@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811F03112B8905C600086D1F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03102B8905C600086D1F /* BaseViewModel.swift */; };
+		811F03132B89060900086D1F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03122B89060900086D1F /* UIViewControllerExtension.swift */; };
+		811F03192B89068E00086D1F /* SelectTopicsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03152B89068E00086D1F /* SelectTopicsCoordinator.swift */; };
+		811F031A2B89068E00086D1F /* SelectTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03162B89068E00086D1F /* SelectTopicsViewController.swift */; };
+		811F031B2B89068E00086D1F /* SelectTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03172B89068E00086D1F /* SelectTopicsViewModel.swift */; };
+		811F031C2B89068E00086D1F /* SelectTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811F03182B89068E00086D1F /* SelectTopicsViewController.xib */; };
 		81FAAA3B2B88F16200AC0088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA3A2B88F16200AC0088 /* AppDelegate.swift */; };
 		81FAAA3F2B88F16200AC0088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA3E2B88F16200AC0088 /* ViewController.swift */; };
 		81FAAA442B88F16300AC0088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FAAA432B88F16300AC0088 /* Assets.xcassets */; };
@@ -21,9 +27,17 @@
 		81FAAA6A2B88FC6100AC0088 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA692B88FC6100AC0088 /* TimeIntervalExtensions.swift */; };
 		81FAAA6C2B88FC9A00AC0088 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */; };
 		81FAAA6E2B88FCDD00AC0088 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */; };
+		FDD603E56DA659A922667F33 /* Pods_VNPAY_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09068AB4154E30A09EEB2EF /* Pods_VNPAY_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80B608E1E7147826AF9FE9C8 /* Pods-VNPAY_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNPAY_Challenge.debug.xcconfig"; path = "Target Support Files/Pods-VNPAY_Challenge/Pods-VNPAY_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		811F03102B8905C600086D1F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		811F03122B89060900086D1F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		811F03152B89068E00086D1F /* SelectTopicsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsCoordinator.swift; sourceTree = "<group>"; };
+		811F03162B89068E00086D1F /* SelectTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsViewController.swift; sourceTree = "<group>"; };
+		811F03172B89068E00086D1F /* SelectTopicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsViewModel.swift; sourceTree = "<group>"; };
+		811F03182B89068E00086D1F /* SelectTopicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTopicsViewController.xib; sourceTree = "<group>"; };
 		81FAAA372B88F16200AC0088 /* VNPAY_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNPAY_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FAAA3A2B88F16200AC0088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FAAA3E2B88F16200AC0088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +54,8 @@
 		81FAAA692B88FC6100AC0088 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
 		81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtension.swift; sourceTree = "<group>"; };
+		A09068AB4154E30A09EEB2EF /* Pods_VNPAY_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNPAY_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75314F52BB229FB6B10E4ED /* Pods-VNPAY_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNPAY_Challenge.release.xcconfig"; path = "Target Support Files/Pods-VNPAY_Challenge/Pods-VNPAY_Challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +63,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD603E56DA659A922667F33 /* Pods_VNPAY_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324B201D5E44F59157368096 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80B608E1E7147826AF9FE9C8 /* Pods-VNPAY_Challenge.debug.xcconfig */,
+				A75314F52BB229FB6B10E4ED /* Pods-VNPAY_Challenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		703A27D0DEEAE8F6B473FD99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A09068AB4154E30A09EEB2EF /* Pods_VNPAY_Challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		811F03142B89067900086D1F /* SelectTopics */ = {
+			isa = PBXGroup;
+			children = (
+				811F03152B89068E00086D1F /* SelectTopicsCoordinator.swift */,
+				811F03162B89068E00086D1F /* SelectTopicsViewController.swift */,
+				811F03172B89068E00086D1F /* SelectTopicsViewModel.swift */,
+				811F03182B89068E00086D1F /* SelectTopicsViewController.xib */,
+			);
+			path = SelectTopics;
+			sourceTree = "<group>";
+		};
 		81FAAA2E2B88F16200AC0088 = {
 			isa = PBXGroup;
 			children = (
 				81FAAA392B88F16200AC0088 /* VNPAY_Challenge */,
 				81FAAA382B88F16200AC0088 /* Products */,
+				324B201D5E44F59157368096 /* Pods */,
+				703A27D0DEEAE8F6B473FD99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				81FAAA512B88F28200AC0088 /* Coordinator.swift */,
+				811F03102B8905C600086D1F /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -111,6 +159,7 @@
 		81FAAA592B88F34800AC0088 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				811F03142B89067900086D1F /* SelectTopics */,
 				81FAAA5A2B88F34E00AC0088 /* Splash */,
 			);
 			path = Screen;
@@ -135,6 +184,7 @@
 				81FAAA662B88FC5100AC0088 /* UIImageExtensions.swift */,
 				81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */,
 				81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */,
+				811F03122B89060900086D1F /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -146,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81FAAA4B2B88F16300AC0088 /* Build configuration list for PBXNativeTarget "VNPAY_Challenge" */;
 			buildPhases = (
+				3BE82599C2356386FA9F0F7E /* [CP] Check Pods Manifest.lock */,
 				81FAAA332B88F16200AC0088 /* Sources */,
 				81FAAA342B88F16200AC0088 /* Frameworks */,
 				81FAAA352B88F16200AC0088 /* Resources */,
+				94D68B00D07BA5D9BF75DF5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,11 +250,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FAAA442B88F16300AC0088 /* Assets.xcassets in Resources */,
+				811F031C2B89068E00086D1F /* SelectTopicsViewController.xib in Resources */,
 				81FAAA622B88F35E00AC0088 /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BE82599C2356386FA9F0F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VNPAY_Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94D68B00D07BA5D9BF75DF5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VNPAY_Challenge/Pods-VNPAY_Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VNPAY_Challenge/Pods-VNPAY_Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VNPAY_Challenge/Pods-VNPAY_Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81FAAA332B88F16200AC0088 /* Sources */ = {
@@ -216,10 +311,15 @@
 				81FAAA6E2B88FCDD00AC0088 /* CollectionViewExtension.swift in Sources */,
 				81FAAA3B2B88F16200AC0088 /* AppDelegate.swift in Sources */,
 				81FAAA612B88F35E00AC0088 /* SplashViewModel.swift in Sources */,
+				811F031B2B89068E00086D1F /* SelectTopicsViewModel.swift in Sources */,
+				811F03112B8905C600086D1F /* BaseViewModel.swift in Sources */,
+				811F031A2B89068E00086D1F /* SelectTopicsViewController.swift in Sources */,
 				81FAAA602B88F35E00AC0088 /* SplashViewController.swift in Sources */,
+				811F03192B89068E00086D1F /* SelectTopicsCoordinator.swift in Sources */,
 				81FAAA522B88F28200AC0088 /* Coordinator.swift in Sources */,
 				81FAAA6A2B88FC6100AC0088 /* TimeIntervalExtensions.swift in Sources */,
 				81FAAA5F2B88F35E00AC0088 /* SplashCoordinator.swift in Sources */,
+				811F03132B89060900086D1F /* UIViewControllerExtension.swift in Sources */,
 				81FAAA672B88FC5100AC0088 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +443,7 @@
 		};
 		81FAAA4C2B88F16300AC0088 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B608E1E7147826AF9FE9C8 /* Pods-VNPAY_Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -373,6 +474,7 @@
 		};
 		81FAAA4D2B88F16300AC0088 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75314F52BB229FB6B10E4ED /* Pods-VNPAY_Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
