@@ -16,6 +16,11 @@
 		81FAAA602B88F35E00AC0088 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA5C2B88F35E00AC0088 /* SplashViewController.swift */; };
 		81FAAA612B88F35E00AC0088 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA5D2B88F35E00AC0088 /* SplashViewModel.swift */; };
 		81FAAA622B88F35E00AC0088 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81FAAA5E2B88F35E00AC0088 /* SplashViewController.xib */; };
+		81FAAA672B88FC5100AC0088 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA652B88FC5100AC0088 /* UIColorExtensions.swift */; };
+		81FAAA682B88FC5100AC0088 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA662B88FC5100AC0088 /* UIImageExtensions.swift */; };
+		81FAAA6A2B88FC6100AC0088 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA692B88FC6100AC0088 /* TimeIntervalExtensions.swift */; };
+		81FAAA6C2B88FC9A00AC0088 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */; };
+		81FAAA6E2B88FCDD00AC0088 /* CollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		81FAAA5C2B88F35E00AC0088 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		81FAAA5D2B88F35E00AC0088 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		81FAAA5E2B88F35E00AC0088 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		81FAAA652B88FC5100AC0088 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		81FAAA662B88FC5100AC0088 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		81FAAA692B88FC6100AC0088 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,7 @@
 		81FAAA4F2B88F25000AC0088 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				81FAAA642B88FC0D00AC0088 /* Extension */,
 				81FAAA502B88F25C00AC0088 /* Base */,
 			);
 			path = Core;
@@ -114,6 +125,18 @@
 				81FAAA5E2B88F35E00AC0088 /* SplashViewController.xib */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		81FAAA642B88FC0D00AC0088 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81FAAA692B88FC6100AC0088 /* TimeIntervalExtensions.swift */,
+				81FAAA652B88FC5100AC0088 /* UIColorExtensions.swift */,
+				81FAAA662B88FC5100AC0088 /* UIImageExtensions.swift */,
+				81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */,
+				81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,13 +209,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81FAAA682B88FC5100AC0088 /* UIImageExtensions.swift in Sources */,
 				81FAAA582B88F30C00AC0088 /* AppCoordinator.swift in Sources */,
+				81FAAA6C2B88FC9A00AC0088 /* UIViewExtension.swift in Sources */,
 				81FAAA3F2B88F16200AC0088 /* ViewController.swift in Sources */,
+				81FAAA6E2B88FCDD00AC0088 /* CollectionViewExtension.swift in Sources */,
 				81FAAA3B2B88F16200AC0088 /* AppDelegate.swift in Sources */,
 				81FAAA612B88F35E00AC0088 /* SplashViewModel.swift in Sources */,
 				81FAAA602B88F35E00AC0088 /* SplashViewController.swift in Sources */,
 				81FAAA522B88F28200AC0088 /* Coordinator.swift in Sources */,
+				81FAAA6A2B88FC6100AC0088 /* TimeIntervalExtensions.swift in Sources */,
 				81FAAA5F2B88F35E00AC0088 /* SplashCoordinator.swift in Sources */,
+				81FAAA672B88FC5100AC0088 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
