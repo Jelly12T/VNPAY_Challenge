@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct VideoCategoryEntity: Codable {
+    var id: String
+    var name: String
+    var thumb: String
+    var itemCount: Int
+    var videos: [VideoItemEntity]
+}

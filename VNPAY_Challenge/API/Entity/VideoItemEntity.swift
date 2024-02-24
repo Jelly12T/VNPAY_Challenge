@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct VideoItemEntity: Codable {
+    var id: String
+    var name: String
+    var source: String
+    var thumbGif: String
+    var thumbImage: String
+    var thumbMp4: String
+    var duration: Double
+    var type: String
+}
+
