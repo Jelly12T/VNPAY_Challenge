@@ -13,6 +13,20 @@
 		811F031A2B89068E00086D1F /* SelectTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03162B89068E00086D1F /* SelectTopicsViewController.swift */; };
 		811F031B2B89068E00086D1F /* SelectTopicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03172B89068E00086D1F /* SelectTopicsViewModel.swift */; };
 		811F031C2B89068E00086D1F /* SelectTopicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811F03182B89068E00086D1F /* SelectTopicsViewController.xib */; };
+		811F031F2B899A1300086D1F /* SelectTopicsCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F031E2B899A1300086D1F /* SelectTopicsCollectionViewLayout.swift */; };
+		811F03232B899AB200086D1F /* BaseFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03222B899AB200086D1F /* BaseFont.swift */; };
+		811F032B2B899ADA00086D1F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 811F03252B899ADA00086D1F /* Montserrat-Medium.ttf */; };
+		811F032C2B899ADA00086D1F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 811F03262B899ADA00086D1F /* Montserrat-Bold.ttf */; };
+		811F032D2B899ADA00086D1F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 811F03272B899ADA00086D1F /* Montserrat-SemiBold.ttf */; };
+		811F032E2B899ADA00086D1F /* Montserrat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03282B899ADA00086D1F /* Montserrat.swift */; };
+		811F032F2B899ADA00086D1F /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 811F03292B899ADA00086D1F /* Montserrat-ExtraBold.ttf */; };
+		811F03302B899ADA00086D1F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 811F032A2B899ADA00086D1F /* Montserrat-Regular.ttf */; };
+		811F03332B899FB300086D1F /* TapableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03322B899FB300086D1F /* TapableView.swift */; };
+		811F03372B89A05200086D1F /* SelectTopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03352B89A05200086D1F /* SelectTopicCell.swift */; };
+		811F03382B89A05200086D1F /* SelectTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811F03362B89A05200086D1F /* SelectTopicCell.xib */; };
+		811F033A2B89A16400086D1F /* SelectTopicsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F03392B89A16400086D1F /* SelectTopicsItemViewModel.swift */; };
+		811F033C2B89A24C00086D1F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F033B2B89A24C00086D1F /* StringExtension.swift */; };
+		811F033F2B89A35500086D1F /* ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F033E2B89A35500086D1F /* ReactiveExtensions.swift */; };
 		81FAAA3B2B88F16200AC0088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA3A2B88F16200AC0088 /* AppDelegate.swift */; };
 		81FAAA3F2B88F16200AC0088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAAA3E2B88F16200AC0088 /* ViewController.swift */; };
 		81FAAA442B88F16300AC0088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FAAA432B88F16300AC0088 /* Assets.xcassets */; };
@@ -38,6 +52,20 @@
 		811F03162B89068E00086D1F /* SelectTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsViewController.swift; sourceTree = "<group>"; };
 		811F03172B89068E00086D1F /* SelectTopicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsViewModel.swift; sourceTree = "<group>"; };
 		811F03182B89068E00086D1F /* SelectTopicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTopicsViewController.xib; sourceTree = "<group>"; };
+		811F031E2B899A1300086D1F /* SelectTopicsCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsCollectionViewLayout.swift; sourceTree = "<group>"; };
+		811F03222B899AB200086D1F /* BaseFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFont.swift; sourceTree = "<group>"; };
+		811F03252B899ADA00086D1F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		811F03262B899ADA00086D1F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		811F03272B899ADA00086D1F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		811F03282B899ADA00086D1F /* Montserrat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Montserrat.swift; sourceTree = "<group>"; };
+		811F03292B899ADA00086D1F /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		811F032A2B899ADA00086D1F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		811F03322B899FB300086D1F /* TapableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapableView.swift; sourceTree = "<group>"; };
+		811F03352B89A05200086D1F /* SelectTopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicCell.swift; sourceTree = "<group>"; };
+		811F03362B89A05200086D1F /* SelectTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTopicCell.xib; sourceTree = "<group>"; };
+		811F03392B89A16400086D1F /* SelectTopicsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTopicsItemViewModel.swift; sourceTree = "<group>"; };
+		811F033B2B89A24C00086D1F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		811F033E2B89A35500086D1F /* ReactiveExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtensions.swift; sourceTree = "<group>"; };
 		81FAAA372B88F16200AC0088 /* VNPAY_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNPAY_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FAAA3A2B88F16200AC0088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FAAA3E2B88F16200AC0088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,12 +118,79 @@
 		811F03142B89067900086D1F /* SelectTopics */ = {
 			isa = PBXGroup;
 			children = (
+				811F03342B89A01800086D1F /* View */,
+				811F031D2B89983300086D1F /* Model */,
 				811F03152B89068E00086D1F /* SelectTopicsCoordinator.swift */,
 				811F03162B89068E00086D1F /* SelectTopicsViewController.swift */,
 				811F03172B89068E00086D1F /* SelectTopicsViewModel.swift */,
 				811F03182B89068E00086D1F /* SelectTopicsViewController.xib */,
 			);
 			path = SelectTopics;
+			sourceTree = "<group>";
+		};
+		811F031D2B89983300086D1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				811F031E2B899A1300086D1F /* SelectTopicsCollectionViewLayout.swift */,
+				811F03392B89A16400086D1F /* SelectTopicsItemViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		811F03202B899A8700086D1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				811F03212B899A9D00086D1F /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		811F03212B899A9D00086D1F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				811F03222B899AB200086D1F /* BaseFont.swift */,
+				811F03242B899ADA00086D1F /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		811F03242B899ADA00086D1F /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				811F03252B899ADA00086D1F /* Montserrat-Medium.ttf */,
+				811F03262B899ADA00086D1F /* Montserrat-Bold.ttf */,
+				811F03272B899ADA00086D1F /* Montserrat-SemiBold.ttf */,
+				811F03282B899ADA00086D1F /* Montserrat.swift */,
+				811F03292B899ADA00086D1F /* Montserrat-ExtraBold.ttf */,
+				811F032A2B899ADA00086D1F /* Montserrat-Regular.ttf */,
+			);
+			name = Montserrat;
+			path = VNPAY_Challenge/Resources/Montserrat;
+			sourceTree = SOURCE_ROOT;
+		};
+		811F03312B899FAB00086D1F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				811F03322B899FB300086D1F /* TapableView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		811F03342B89A01800086D1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				811F03352B89A05200086D1F /* SelectTopicCell.swift */,
+				811F03362B89A05200086D1F /* SelectTopicCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		811F033D2B89A34100086D1F /* RxExtension */ = {
+			isa = PBXGroup;
+			children = (
+				811F033E2B89A35500086D1F /* ReactiveExtensions.swift */,
+			);
+			path = RxExtension;
 			sourceTree = "<group>";
 		};
 		81FAAA2E2B88F16200AC0088 = {
@@ -119,6 +214,7 @@
 		81FAAA392B88F16200AC0088 /* VNPAY_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				811F03202B899A8700086D1F /* Resources */,
 				81FAAA4E2B88F22F00AC0088 /* App */,
 				81FAAA592B88F34800AC0088 /* Screen */,
 				81FAAA4F2B88F25000AC0088 /* Core */,
@@ -141,6 +237,7 @@
 		81FAAA4F2B88F25000AC0088 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				811F03312B899FAB00086D1F /* Common */,
 				81FAAA642B88FC0D00AC0088 /* Extension */,
 				81FAAA502B88F25C00AC0088 /* Base */,
 			);
@@ -179,12 +276,14 @@
 		81FAAA642B88FC0D00AC0088 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				811F033D2B89A34100086D1F /* RxExtension */,
 				81FAAA692B88FC6100AC0088 /* TimeIntervalExtensions.swift */,
 				81FAAA652B88FC5100AC0088 /* UIColorExtensions.swift */,
 				81FAAA662B88FC5100AC0088 /* UIImageExtensions.swift */,
 				81FAAA6B2B88FC9A00AC0088 /* UIViewExtension.swift */,
 				81FAAA6D2B88FCDD00AC0088 /* CollectionViewExtension.swift */,
 				811F03122B89060900086D1F /* UIViewControllerExtension.swift */,
+				811F033B2B89A24C00086D1F /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -249,8 +348,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811F03302B899ADA00086D1F /* Montserrat-Regular.ttf in Resources */,
+				811F03382B89A05200086D1F /* SelectTopicCell.xib in Resources */,
+				811F032D2B899ADA00086D1F /* Montserrat-SemiBold.ttf in Resources */,
+				811F032C2B899ADA00086D1F /* Montserrat-Bold.ttf in Resources */,
 				81FAAA442B88F16300AC0088 /* Assets.xcassets in Resources */,
 				811F031C2B89068E00086D1F /* SelectTopicsViewController.xib in Resources */,
+				811F032B2B899ADA00086D1F /* Montserrat-Medium.ttf in Resources */,
+				811F032F2B899ADA00086D1F /* Montserrat-ExtraBold.ttf in Resources */,
 				81FAAA622B88F35E00AC0088 /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,13 +418,21 @@
 				81FAAA612B88F35E00AC0088 /* SplashViewModel.swift in Sources */,
 				811F031B2B89068E00086D1F /* SelectTopicsViewModel.swift in Sources */,
 				811F03112B8905C600086D1F /* BaseViewModel.swift in Sources */,
+				811F03372B89A05200086D1F /* SelectTopicCell.swift in Sources */,
 				811F031A2B89068E00086D1F /* SelectTopicsViewController.swift in Sources */,
+				811F033A2B89A16400086D1F /* SelectTopicsItemViewModel.swift in Sources */,
+				811F031F2B899A1300086D1F /* SelectTopicsCollectionViewLayout.swift in Sources */,
 				81FAAA602B88F35E00AC0088 /* SplashViewController.swift in Sources */,
+				811F033F2B89A35500086D1F /* ReactiveExtensions.swift in Sources */,
 				811F03192B89068E00086D1F /* SelectTopicsCoordinator.swift in Sources */,
 				81FAAA522B88F28200AC0088 /* Coordinator.swift in Sources */,
 				81FAAA6A2B88FC6100AC0088 /* TimeIntervalExtensions.swift in Sources */,
+				811F03332B899FB300086D1F /* TapableView.swift in Sources */,
+				811F03232B899AB200086D1F /* BaseFont.swift in Sources */,
 				81FAAA5F2B88F35E00AC0088 /* SplashCoordinator.swift in Sources */,
+				811F033C2B89A24C00086D1F /* StringExtension.swift in Sources */,
 				811F03132B89060900086D1F /* UIViewControllerExtension.swift in Sources */,
+				811F032E2B899ADA00086D1F /* Montserrat.swift in Sources */,
 				81FAAA672B88FC5100AC0088 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
