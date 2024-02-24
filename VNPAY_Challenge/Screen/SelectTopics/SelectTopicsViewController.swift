@@ -74,8 +74,8 @@ class SelectTopicsViewController: UIViewController {
 
     func configRoutingOutput() {
         self.viewModel.routing.routeToSound
-            .subscribe(onNext: { [unowned self] in
-                self.coordinator?.routeToSound()
+            .subscribe(onNext: { [unowned self] listTopicSelected in
+                self.coordinator?.routeToSound(listTopicSelected: listTopicSelected)
             })
             .disposed(by: self.disposeBag)
     }

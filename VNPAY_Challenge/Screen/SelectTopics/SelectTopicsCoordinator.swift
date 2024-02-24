@@ -38,13 +38,12 @@ final class SelectTopicsCoordinator: Coordinator {
     }
 
     // MARK: - Route TO Other Screen
-    func routeToSound() {
-
+    func routeToSound(listTopicSelected: [String]) {
         guard let navigationController = self.controller.navigationController else {
             return
         }
 
-        let coordinator = SoundCoordinator(navigationController: navigationController)
+        let coordinator = SoundCoordinator(listTopicSelected: listTopicSelected, navigationController: navigationController)
         coordinator.start()
         self.addChild(coordinator)
         self.soundCoordinator = coordinator

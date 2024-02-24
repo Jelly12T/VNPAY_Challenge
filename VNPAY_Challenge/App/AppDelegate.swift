@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         self.configAppCoordinator()
         self.configAppearance()
+        self.configMonitorNetwork()
         return true
     }
 
@@ -33,6 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         self.appCoordinator = AppCoordinator(window: self.window!)
         self.appCoordinator.start()
+    }
+
+    func configMonitorNetwork() {
+        MonitorNetwork.shared.configMonitorNetwork()
     }
 }
 

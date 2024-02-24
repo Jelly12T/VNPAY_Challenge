@@ -12,10 +12,17 @@
         <array key="Montserrat-ExtraBold.ttf">
             <string>Montserrat-ExtraBold</string>
         </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SoundViewController" customModule="VNPAY_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="backTapableView" destination="a55-qV-dDI" id="2Ex-yF-gBG"/>
+                <outlet property="noDataView" destination="xNY-CV-zeZ" id="CUs-ib-kGW"/>
+                <outlet property="noInternetView" destination="nht-HS-h7S" id="wyP-XM-2XT"/>
+                <outlet property="soundCollectionView" destination="V62-dL-lyb" id="VaL-gZ-Qz8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,6 +31,33 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-CV-zeZ">
+                    <rect key="frame" x="144.33333333333334" y="376" width="104.33333333333334" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sound_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="5CY-za-WYB">
+                            <rect key="frame" x="18.333333333333314" y="0.0" width="68" height="68"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="68" id="snW-IW-XZZ"/>
+                                <constraint firstAttribute="width" constant="68" id="u1v-G0-83p"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data ......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3M-wO-pWd">
+                            <rect key="frame" x="0.0" y="78" width="104.33333333333333" height="22"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="0.45490187409999999" green="0.45490199329999997" blue="0.50588232280000001" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="n3M-wO-pWd" secondAttribute="bottom" id="8b0-ug-IVZ"/>
+                        <constraint firstItem="n3M-wO-pWd" firstAttribute="leading" secondItem="xNY-CV-zeZ" secondAttribute="leading" id="HdL-XR-WdY"/>
+                        <constraint firstItem="n3M-wO-pWd" firstAttribute="top" secondItem="5CY-za-WYB" secondAttribute="bottom" constant="10" id="Wbl-Mc-TdW"/>
+                        <constraint firstItem="5CY-za-WYB" firstAttribute="centerX" secondItem="xNY-CV-zeZ" secondAttribute="centerX" id="bhg-Gb-i6J"/>
+                        <constraint firstAttribute="trailing" secondItem="n3M-wO-pWd" secondAttribute="trailing" id="hbK-55-jID"/>
+                        <constraint firstItem="5CY-za-WYB" firstAttribute="top" secondItem="xNY-CV-zeZ" secondAttribute="top" id="ucu-Bo-rHc"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJ1-Bb-5e2">
                     <rect key="frame" x="16" y="59" width="361" height="34.333333333333343"/>
                     <subviews>
@@ -33,7 +67,7 @@
                             <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a55-qV-dDI">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a55-qV-dDI" customClass="TapableView" customModule="VNPAY_Challenge" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="34.333333333333336"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back_button" translatesAutoresizingMaskIntoConstraints="NO" id="zAU-nv-YRW">
@@ -63,8 +97,8 @@
                         <constraint firstItem="k0Y-Mf-HqT" firstAttribute="top" secondItem="UJ1-Bb-5e2" secondAttribute="top" id="mxe-mP-j7k"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V62-dL-lyb">
-                    <rect key="frame" x="0.0" y="109.33333333333331" width="393" height="708.66666666666674"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V62-dL-lyb">
+                    <rect key="frame" x="10" y="109.33333333333331" width="373" height="708.66666666666674"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w0h-Js-4p2">
                         <size key="itemSize" width="128" height="128"/>
@@ -73,23 +107,34 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nht-HS-h7S" customClass="NoInternetView" customModule="VNPAY_Challenge" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="98.333333333333314" width="393" height="719.66666666666674"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="V62-dL-lyb" firstAttribute="top" secondItem="UJ1-Bb-5e2" secondAttribute="bottom" constant="16" id="1V4-R0-U7H"/>
                 <constraint firstItem="UJ1-Bb-5e2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BA6-l8-lqc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nht-HS-h7S" secondAttribute="bottom" id="Ocj-8R-9hw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="V62-dL-lyb" secondAttribute="bottom" id="TgD-KI-f5w"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V62-dL-lyb" secondAttribute="trailing" id="ZoX-pF-qFh"/>
+                <constraint firstItem="nht-HS-h7S" firstAttribute="top" secondItem="UJ1-Bb-5e2" secondAttribute="bottom" constant="5" id="WMa-F4-PWo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V62-dL-lyb" secondAttribute="trailing" constant="10" id="ZoX-pF-qFh"/>
+                <constraint firstItem="nht-HS-h7S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gmn-za-o4L"/>
+                <constraint firstItem="xNY-CV-zeZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jkN-vW-14O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nht-HS-h7S" secondAttribute="trailing" id="qyw-g6-Z9O"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UJ1-Bb-5e2" secondAttribute="trailing" constant="16" id="rJl-V3-fSV"/>
                 <constraint firstItem="UJ1-Bb-5e2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="sZX-7n-PrP"/>
-                <constraint firstItem="V62-dL-lyb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xGh-KH-WSF"/>
+                <constraint firstItem="V62-dL-lyb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="xGh-KH-WSF"/>
+                <constraint firstItem="xNY-CV-zeZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ya7-kD-C3A"/>
             </constraints>
             <point key="canvasLocation" x="139" y="21"/>
         </view>
     </objects>
     <resources>
         <image name="ic_back_button" width="24" height="24"/>
+        <image name="ic_sound_no_data" width="68" height="68"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

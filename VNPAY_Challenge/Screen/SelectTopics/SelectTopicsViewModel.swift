@@ -29,7 +29,7 @@ struct SelectTopicsViewModelOutput: InputOutputViewModel {
 }
 
 struct SelectTopicsViewModelRouting: RoutingOutput {
-    var routeToSound = PublishSubject<Void>()
+    var routeToSound = PublishSubject<[String]>()
 }
 
 final class SelectTopicsViewModel: BaseViewModel<SelectTopicsViewModelInput, SelectTopicsViewModelOutput, SelectTopicsViewModelRouting> {
@@ -76,7 +76,9 @@ final class SelectTopicsViewModel: BaseViewModel<SelectTopicsViewModelInput, Sel
 
         self.input.didTapStartButton
             .subscribe(onNext: { [unowned self] in
-                self.routing.routeToSound.onNext(())
+                let listTopicSelected = self.listTopics.filter { $0.isSelected }
+                                                        .map { $0.title.lowercased() }
+                self.routing.routeToSound.onNext(listTopicSelected)
             })
             .disposed(by: self.disposeBag)
     }

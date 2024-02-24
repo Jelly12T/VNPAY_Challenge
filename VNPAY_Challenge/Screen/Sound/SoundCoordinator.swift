@@ -8,15 +8,17 @@
 import UIKit
 
 final class SoundCoordinator: Coordinator {
-    var navigationController: UINavigationController
+    private var listTopicSelected: [String]
+    private var navigationController: UINavigationController
 
-    init(navigationController: UINavigationController) {
+    init(listTopicSelected: [String], navigationController: UINavigationController) {
+        self.listTopicSelected = listTopicSelected
         self.navigationController = navigationController
         super.init()
     }
 
     lazy var controller: SoundViewController = {
-        let viewModel = SoundViewModel()
+        let viewModel = SoundViewModel(listTopicSelected: self.listTopicSelected)
         let controller = SoundViewController(viewModel: viewModel, coordinator: self)
         return controller
     }()
