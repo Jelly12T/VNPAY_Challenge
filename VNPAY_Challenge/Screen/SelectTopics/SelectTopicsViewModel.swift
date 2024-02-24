@@ -29,7 +29,7 @@ struct SelectTopicsViewModelOutput: InputOutputViewModel {
 }
 
 struct SelectTopicsViewModelRouting: RoutingOutput {
-    var dismiss = PublishSubject<Void>()
+    var routeToSound = PublishSubject<Void>()
 }
 
 final class SelectTopicsViewModel: BaseViewModel<SelectTopicsViewModelInput, SelectTopicsViewModelOutput, SelectTopicsViewModelRouting> {
@@ -76,7 +76,7 @@ final class SelectTopicsViewModel: BaseViewModel<SelectTopicsViewModelInput, Sel
 
         self.input.didTapStartButton
             .subscribe(onNext: { [unowned self] in
-               // self.routing.dismiss.onNext(())
+                self.routing.routeToSound.onNext(())
             })
             .disposed(by: self.disposeBag)
     }

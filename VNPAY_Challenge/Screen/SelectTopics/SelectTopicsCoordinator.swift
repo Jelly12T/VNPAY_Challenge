@@ -9,6 +9,8 @@ import UIKit
 
 final class SelectTopicsCoordinator: Coordinator {
     var window: UIWindow!
+    private var soundCoordinator: SoundCoordinator?
+
     init(window: UIWindow!) {
         self.window = window
     }
@@ -22,7 +24,8 @@ final class SelectTopicsCoordinator: Coordinator {
     override func start() {
         super.start()
 
-        self.window.rootViewController = self.controller
+        let navigation = UINavigationController(rootViewController: self.controller)
+        self.window.rootViewController = navigation
         self.window.makeKeyAndVisible()
     }
 
@@ -32,5 +35,18 @@ final class SelectTopicsCoordinator: Coordinator {
         }
 
         super.stop(completion: completion)
+    }
+
+    // MARK: - Route TO Other Screen
+    func routeToSound() {
+
+        guard let navigationController = self.controller.navigationController else {
+            return
+        }
+
+        let coordinator = SoundCoordinator(navigationController: navigationController)
+        coordinator.start()
+        self.addChild(coordinator)
+        self.soundCoordinator = coordinator
     }
 }

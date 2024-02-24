@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 public extension Reactive where Base: UIControl {
-    public var tap: ControlEvent<Void> {
+    var tap: ControlEvent<Void> {
         controlEvent(.touchUpInside)
     }
 }

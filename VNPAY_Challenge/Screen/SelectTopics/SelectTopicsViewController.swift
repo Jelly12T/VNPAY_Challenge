@@ -73,7 +73,11 @@ class SelectTopicsViewController: UIViewController {
     }
 
     func configRoutingOutput() {
-
+        self.viewModel.routing.routeToSound
+            .subscribe(onNext: { [unowned self] in
+                self.coordinator?.routeToSound()
+            })
+            .disposed(by: self.disposeBag)
     }
 
     private func configUI() {
